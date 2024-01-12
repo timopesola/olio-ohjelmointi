@@ -5,10 +5,10 @@
 using namespace std;
 
 int game(int maxnum);
-int maxnum = 0;
 
 int main()
 {
+    int maxnum = 0;
     cout << "Anna korkein mahdollinen etsittava luku: ";
     cin >> maxnum;
     cout << endl << game(maxnum) << " oli arvaustesi maara" << endl;
