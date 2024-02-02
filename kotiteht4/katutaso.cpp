@@ -27,5 +27,5 @@ double Katutaso::laskeKulutus(double hinta)
     double loppuhinta1 = as1.laskeKulutus(hinta);
     double loppuhinta2 = as2.laskeKulutus(hinta);
 
-    return loppuhinta1+loppuhinta2+Kerros::laskeKulutus(1);
+    return loppuhinta1+loppuhinta2+Kerros::laskeKulutus(hinta);
 }
