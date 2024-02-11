@@ -50,10 +50,6 @@ void MyDeviceUI::uiShowMenu()
         {
             MyDeviceUI::uiShowDeviceInformation();
         }
-        if (choice==5)
-        {
-
-        }
         if (choice < 1 || choice > 5)
         {
             cout << "Choose one of the options, please" << endl;
