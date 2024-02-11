@@ -9,12 +9,17 @@ DeviceMouse::DeviceMouse()
 
 void DeviceMouse::setPrimaryButton()
 {
-    cin >> primaryButton;
-    if (primaryButton != 1 && primaryButton != 2)
+    do
     {
-        cout << endl << "Please enter either 1 or 2" << endl;
-        DeviceMouse::setPrimaryButton();
+
+        cin >> primaryButton;
+        if (primaryButton != 1 && primaryButton != 2)
+        {
+            cout << endl << "Please enter either 1 or 2" << endl;
+        }
+
     }
+    while (primaryButton != 1 && primaryButton != 2);
 }
 
 short DeviceMouse::getPrimaryButton()

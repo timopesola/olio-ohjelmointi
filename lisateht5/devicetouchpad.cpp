@@ -9,12 +9,15 @@ DeviceTouchPad::DeviceTouchPad()
 
 void DeviceTouchPad::setTouchPadSensitivity()
 {
-    cin >> touchPadSensitivity;
-    if (touchPadSensitivity < 1 || touchPadSensitivity > 5)
+    do
     {
-        cout << endl << "Please enter a value between 1 and 5" << endl;
-        DeviceTouchPad::setTouchPadSensitivity();
+        cin >> touchPadSensitivity;
+        if (touchPadSensitivity < 1 || touchPadSensitivity > 5)
+        {
+            cout << endl << "Please enter a value between 1 and 5" << endl;
+        }
     }
+    while (touchPadSensitivity < 1 || touchPadSensitivity > 5);
 }
 
 short DeviceTouchPad::getTouchPadSensitivity()

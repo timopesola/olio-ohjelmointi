@@ -9,12 +9,17 @@ DeviceDisplay::DeviceDisplay()
 
 void DeviceDisplay::setDisplayResolution()
 {
-    cin >> displayResolution;
-    if (displayResolution < 1 || displayResolution > 10)
+    do
     {
-        cout << endl << "Please enter a value between 1 and 10" << endl;
-        DeviceDisplay::setDisplayResolution();
+        cin >> displayResolution;
+        if (displayResolution < 1 || displayResolution > 10)
+        {
+            cout << endl << "Please enter a value between 1 and 10" << endl;
+        }
+
     }
+    while (displayResolution < 1 || displayResolution > 10);
+
 }
 
 short DeviceDisplay::getDisplayResolution()
